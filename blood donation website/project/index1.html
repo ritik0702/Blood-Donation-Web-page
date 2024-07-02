@@ -1,0 +1,333 @@
+<html>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        font: 15px/1.5 Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    /* Global */
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .container1 {
+        float: right;
+        margin-left: 0px;
+        margin-right: 750px;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .button_1 {
+        height: 38px;
+        background: #e8491d;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #ffffff;
+    }
+    
+    .dark {
+        padding: 15px;
+        background: #35424a;
+        color: #ffffff;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-left: 750px;
+    }
+    
+    .input-group2 {
+        margin: auto;
+        width: 100%;
+        padding: 350px;
+        box-sizing: border-box;
+        background: url('b4.jpg');
+        min-height: 400px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .search {
+        color: #FB0707;
+        font-style: Bold;
+        font-size: 30px;
+    }
+    /* Header **/
+    
+    header {
+        background: #35424a;
+        color: #ffffff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d 3px solid;
+    }
+    
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+    
+    header #branding {
+        float: left;
+    }
+    
+    header #branding h1 {
+        margin: 0;
+    }
+    
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+    
+    header .highlight,
+    header .current a {
+        color: #e8491d;
+        font-weight: bold;
+    }
+    
+    header a:hover {
+        color: #cccccc;
+        font-weight: bold;
+    }
+    /* Showcase */
+    
+    #showcase {
+        min-height: 400px;
+        background: url('b4.jpg') no-repeat 0 -400px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    #showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+    
+    #showcase p {
+        font-size: 20px;
+    }
+    /* Newsletter */
+    
+    #newsletter {
+        padding: 15px;
+        color: #ffffff;
+        background: #35424a
+    }
+    
+    #newsletter h1 {
+        float: left;
+    }
+    
+    #newsletter form {
+        float: right;
+        margin-top: 15px;
+    }
+    
+    #newsletter input[type="email"] {
+        padding: 4px;
+        height: 25px;
+        width: 250px;
+    }
+    /* Boxes */
+    
+    #boxes {
+        margin-top: 20px;
+    }
+    
+    #boxes .box {
+        float: left;
+        text-align: center;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    #boxes .box img {
+        width: 90px;
+    }
+    
+    aside#sidebar {
+        float: right;
+        width: 30%;
+        margin-top: 10px;
+    }
+    
+    aside#sidebar .quote input,
+    aside#sidebar .quote textarea {
+        width: 90%;
+        padding: 5px;
+    }
+    /* Main-col */
+    
+    article#main-col {
+        float: left;
+        width: 65%;
+    }
+    /* Services */
+    
+    ul#services li {
+        list-style: none;
+        padding: 20px;
+        border: #cccccc solid 1px;
+        margin-bottom: 5px;
+        background: #e6e6e6;
+    }
+    
+    footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+    }
+    /* Media Queries */
+    
+    @media(max-width: 768px) {
+        header #branding,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        #newsletter form,
+        #boxes .box,
+        article#main-col,
+        aside#sidebar {
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        header {
+            padding-bottom: 20px;
+        }
+        #showcase h1 {
+            margin-top: 40px;
+        }
+        #newsletter button,
+        .quote button {
+            display: block;
+            width: 100%;
+        }
+        #newsletter form input[type="email"],
+        .quote input,
+        .quote textarea {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+    
+    table .searchblood {
+        color: red;
+    }
+    
+    .sign {
+        margin-left: 61%;
+        padding: 10px;
+        font-weight: 900;
+        color: white;
+        border: 2px solid black;
+        background-color: #b55055;
+    }
+</style>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Blood Donation">
+    <meta name="keywords" content="donate,blood,recipients,blood group">
+    <meta name="author" content="Jayaraj, Varun Raj,Lava Kumar,Venkatesh">
+    <meta charset="utf-8">
+    <title>Home of blood bank</title>
+    <link rel="stylesheet" href="style (2).css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Blood</span> Donation</h1>
+            </div>
+
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="index1.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="emergency.html">Emergency</a></li><br>
+                </ul>
+                <ul class="current" class="container1">
+                    <li><a href="form.html">Register</a></li>
+                    <li><a href="first1.html" class="active">Login</a></li>
+                    <li><a href="contactus.html">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Blood Donation</h1>
+            <p>“Blood Donation Will Cost You Nothing But It Will Save A Life!”</p>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="container">
+            <h1>Sign In to get notifications</h1>
+            <div>
+                <a class="sign" href="form.html">sign In</a>
+            </div>
+
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="b9.jpg">
+                <h1>Blood Donation Tips</h1>
+                <p>UNIVERSAL DONORS AND RECIPIENTS The most common blood type is O, followed by type A. Type O individuals are often called "universal donors" since their blood can be transfused into persons with any blood type. Those with type AB blood
+                    are called "universal recipients" because they can receive blood of any type.<a href="https://en.wikipedia.org/wiki/Blood_donation/">Read more</a></p>
+            </div>
+            <div class="box">
+                <img src="b5.jpg">
+                <h1>Impact</h1>
+                <ul>
+                    <li>Patients</li>
+                    <li>Sponsors</li>
+                    <li>Hospitals</li>
+                    <li>Testimonials</li>
+                    <li>Organisation</li>
+                    <li><a href="patients.html">Read more</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="b6.jpg">
+                <h1>SPONSORS</h1>
+                <p>
+                    These are the stories of visionaries: the companies, churches, organizations and schools that see the need and have decided to make an impact by hosting drives of their own.<a href="sponsoship.html">Read more</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <footer>Blood Donation , Copyrights &copy; 2021</footer>
+</body>
+
+</html>

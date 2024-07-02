@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+
+    <style type="text/css">
+        body {
+            background: url(b8.jpg);
+            opacity: 0.7;
+        }
+        
+        div {
+            margin-left: 0px;
+            margin: 20px;
+        }
+        
+        #img1 {
+            margin-top: 10px;
+        }
+        
+        .right {
+            position: absolute;
+            right: 30px;
+            top: 90px;
+            display: inline-block;
+            font-size: large;
+            margin: 10px;
+            font-size: 26PX;
+            PADDING: 10PX;
+            /*border: 2px solid rgb(45, 25, 161);*/
+        }
+        
+        .form2 {
+            /* display: inline-block; */
+            margin-top: -1318px;
+            margin-left: 552px;
+            margin-left: 393px;
+            box-sizing: border-box;
+            width: 41%;
+            font-size: 30px;
+            float: left;
+            text-align: center;
+            margin-top: 3%;
+        }
+        
+        .arg {
+            margin: 468px;
+            margin-top: 150px;
+            color: rgb(5, 4, 4);
+            padding: 10%, 14%;
+            padding: 14px;
+            border-radius: 10px;
+            padding: 29px;
+        }
+        
+        #link {
+            border: 2px solid white;
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+        
+        #cont {
+            text-align: center;
+            font-size: 100px;
+            border: 2px solid white;
+            background-color: gray;
+        }
+        
+        #sub {
+            background-color: rgb(28, 158, 209);
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1 id="cont">Contact Us</h1>
+
+
+
+    <div>
+        <div class="right">
+            <a href="8398969892">Call Now</a>
+            <a href="https:/gmail.com">Email Us</a>
+        </div>
+
+    </div>
+    <div class="form2">
+        <form action="cont.php" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+            <script type="text/javascript">
+                function ValidateForm(frm) {
+                    if (frm.Name.value == "") {
+                        alert('Name is required.');
+                        frm.Name.focus();
+                        return false;
+                    }
+                    if (frm.FromEmailAddress.value == "") {
+                        alert('Email address is required.');
+                        frm.FromEmailAddress.focus();
+                        return false;
+                    }
+                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {
+                        alert('Please enter a valid email address.');
+                        frm.FromEmailAddress.focus();
+                        return false;
+                    }
+                    if (frm.Comments.value == "") {
+                        alert('Please enter comments or questions.');
+                        frm.Comments.focus();
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
+            <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+                <tr>
+                    <td class="arg">
+                        <label for="Name">Name*:</label>
+                    </td>
+                    <td class="arg">
+                        <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="arg">
+                        <label for="PhoneNumber">Phone number:</label>
+                    </td>
+                    <td class="arg">
+                        <input name="Phone" type="phone" maxlength="43" style="width:100%;max-width:250px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="arg">
+                        <label for="FromEmailAddress">Email address*:</label>
+                    </td>
+                    <td class="arg">
+                        <input name="email" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="arg">
+                        <label for="Comments">Comments*:</label>
+                    </td>
+                    <td class="arg">
+                        <textarea name="Comment" type="text" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input id="sub" name="submit" type="submit" value="submit" />
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

